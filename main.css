@@ -1,0 +1,15 @@
+.nav ul li {display: inline;}
+.nav a {text-decoration: none;
+        font-weight: bold;
+        color: white;
+        padding: 8px;
+        background-color: blue;
+        border: 1px blue solid;
+        border-radius: 16px;}
+.nav ul {padding: 0px;}
+.allpage {margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+        padding: 16px;
+        border: 1px black solid;
+        background: whitesmoke;}

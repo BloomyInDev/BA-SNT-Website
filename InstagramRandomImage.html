@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf_8">
+	<title>Un instant, une photo - Photos B.Anglade</title>
+	<link rel="icon" type="image/png" sizes="16x16" href="Images/favicon.png">
+		
+		<link rel="stylesheet"  href="main.css">
+		
+</head>
+<body>
+<div class="allpage">
+	<div class="content">
+		<header>
+			<h1>Bienvenue sur le Site de photos de Batiste Anglade</h1>
+			<h2>Pour la prof de SNT</h2>
+			<hr/>
+		</header>
+		<nav >
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="index.html">Accueil</a> 
+						<a href="InstagramRandomImage.html">Un instant, une photo</a>
+						<a href="mesreseaux.html">Mes réseaux</a> 
+						<a href="apropos.html">A propos</a> 
+					</li>	
+				</ul>
+			</div>
+		</nav>
+		<section >
+			<center><div id="InstagramRandomPhoto"></div></center>
+			<script>
+			function RandomPhotoFromInstagram()
+			{
+				var RandomPhoto=Math.floor((Math.random()*91)+1)
+				var RandomVar=document.getElementById("InstagramRandomPhoto")
+				RandomVar.innerHTML="<a href=\"Images/InstagramRandomImage/"+RandomPhoto+".jpg\"><img src=\"Images/InstagramRandomImage/"+RandomPhoto+".jpg\" width=\"900\"/ title=\"Agrandir l'image\">"
+			}
+			RandomPhotoFromInstagram();
+			</script>
+		</section>
+		<hr />
+		<footer>
+		<p class="diff">Webmaster : <a href="https://github.com/BloomyInDev">Bastien Luben</a> et Batiste Anglade</p>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
+	
+    
+    

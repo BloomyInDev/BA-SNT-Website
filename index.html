@@ -9,17 +9,19 @@
 		
 </head>
 <body>
-	<div class="allpage">
+<div class="allpage">
+	<div class="content">
 		<header>
 			<h1>Bienvenue sur le Site de photos de Batiste Anglade</h1>
 			<h2>Pour la prof de SNT</h2>
-			<hr />
+			<hr/>
 		</header>
 		<nav >
 			<div class="nav">
 				<ul>
 					<li>
 						<a href="index.html">Accueil</a> 
+						<a href="InstagramRandomImage.html">Un instant, une photo</a>
 						<a href="mesreseaux.html">Mes réseaux</a> 
 						<a href="apropos.html">A propos</a> 
 					</li>	
@@ -27,7 +29,16 @@
 			</div>
 		</nav>
 		<section >
-			<center><img id="Image de plante" src="Images/Page1.jpg" height="400"/></center>
+			<center><div id="InstagramRandomPhoto"></div></center>
+			<script>
+			function RandomPhotoFromInstagram()
+			{
+				var RandomPhoto=Math.floor((Math.random()*91)+1)
+				var RandomVar=document.getElementById("InstagramRandomPhoto")
+				RandomVar.innerHTML="<a href=\"Images/InstagramRandomImage/"+RandomPhoto+".jpg\"><img src=\"Images/InstagramRandomImage/"+RandomPhoto+".jpg\" height=\"300\"/ title=\"Agrandir l'image\">"
+			}
+			RandomPhotoFromInstagram();
+			</script>
 			<p align="center">Les dates importantes de la photographie</p>
 			<ul> 	
 				<li><u><strong>10ème siècle :</strong></u> Alhazen fait <u>des recherches</u> sur la lumière et la chambre noire</li>
@@ -40,8 +51,7 @@
 				<li><u><strong>1981 :</strong></u> <u>Sony</u> crée le Mavica (Magnetic Video Camera). Il a un capteur CCD de 279.300 pixels et qui peut contenir <u>50 images</u></li>
 				<li><u><strong>2000 :</strong></u> <u>Samsung</u> crée un <u>téléphone mobile intégrant un appareil photo</u> qui permet de prendre <u>20 photos visualisables uniquement sur PC</u><br>Sharp fait lui en sorte que cela soit possible avec <u>un téléphone ayant un écran 256 couleurs</u></li>
 				<li><u><strong>2021 :</strong></u> Batiste Anglade lance un site à partir des ses photos et sacage le travail des plus grands (ou pas)</li>
-			</ul>
-			
+			</ul>			
 			</ol>
 		</section>
 		<hr />
@@ -49,6 +59,7 @@
 		<p class="diff">Webmaster : <a href="https://github.com/BloomyInDev">Bastien Luben</a> et Batiste Anglade</p>
 		</footer>
 	</div>
+</div>
 </body>
 </html>
 	

@@ -7,9 +7,10 @@
         border: 1px blue solid;
         border-radius: 16px;}
 .nav ul {padding: 0px;}
-.allpage {margin-left: auto;
+.content {margin-left: auto;
         margin-right: auto;
         width: 1000px;
         padding: 16px;
         border: 1px black solid;
         background: whitesmoke;}
+.allpage {background-image: url(Images/arriereplan.jpg);}

@@ -13,4 +13,7 @@
         padding: 16px;
         border: 1px black solid;
         background: whitesmoke;}
-.allpage {background-image: url(Images/arriereplan.jpg);}
+.allpage {background-image: url(Images/arriereplan.jpg);
+        padding: 0px;
+        background-size: contain;
+        background-size: cover;}
